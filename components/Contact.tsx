@@ -11,7 +11,7 @@ const Contact = () => {
       <Image
         src="/images/contact.svg"
         alt="toolbox"
-        className="my-24"
+        className="my-24 pl-8 pr-5"
         width={515}
         height={94}
       />

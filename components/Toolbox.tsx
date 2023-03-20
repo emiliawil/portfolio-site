@@ -6,7 +6,7 @@ const Toolbox = () => {
       <Image
         src="/images/toolbox.svg"
         alt="toolbox"
-        className="my-24"
+        className="my-24 pr-7 pl-10"
         width={448}
         height={108}
       />

@@ -30,7 +30,7 @@ const MyWork = () => {
       <Image
         src="/images/myWork.svg"
         alt="my work"
-        className="my-24"
+        className="my-24 px-6"
         width={558}
         height={105}
       />

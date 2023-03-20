@@ -38,7 +38,7 @@ const MyStory = () => {
         width={542}
         height={111}
         alt="my story"
-        className="my-24"
+        className="my-24 px-6"
       />
       <div className="column text-justify">
         <p>
