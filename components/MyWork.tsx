@@ -27,7 +27,7 @@ const projects = [
 const MyWork = () => {
   return (
     <section id="work" className="flex flex-col items-center mb-24">
-      <img src="/images/myWork.png" alt="my work" className="my-24" />
+      <img src="/images/myWork.svg" alt="my work" className="my-24" />
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
