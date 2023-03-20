@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <header
       id="top"
-      className="w-full mx-auto p-3 md:px-8 sticky top-0 z-50 bg-primary-light"
+      className="w-full mx-auto p-3 md:px-8  top-0 z-50 bg-primary-light"
     >
       <div className="justify-between md:items-center md:flex">
         <div>

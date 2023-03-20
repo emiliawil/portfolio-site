@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center mb-24 max-w-4xl mx-auto"
+      className="flex flex-col text-center md:text-left items-center justify-center mb-24 max-w-4xl mx-auto"
     >
       <Image
         src="/images/contact.svg"
@@ -28,7 +28,7 @@ const Contact = () => {
           >
             emiliawilliamson@pm.me
           </Link>
-          <div className="flex flex-row gap-2 mt-4">
+          <div className="flex flex-row gap-2 mt-4 items-center justify-center md:justify-start">
             <Link
               href="https://linkedin.com/in/emiliawil"
               target="_blank"

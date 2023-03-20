@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="mx-auto my-10 max-w-3xl px-4 sm:px-6 md:max-w-5xl flex flex-col items-center"
+      className="mx-auto my-10 max-w-3xl px-4 text-center sm:px-6 md:max-w-5xl flex flex-col items-center"
     >
       <Image
         src="/images/wave.svg"
@@ -20,7 +20,7 @@ const Footer = () => {
         height={200}
         className="mb-10"
       />
-      <p className="font-bold">
+      <p className="font-bold ">
         designed and built with{" "}
         <span className="text-primary-red">&hearts;</span> and{" "}
         <span className="text-primary-pink">next.js</span> by Emilia "Milly"
