@@ -7,7 +7,7 @@ export default function Head() {
         name="description"
         content="Web developer and UX designer based in the UK."
       />
-      <link rel="icon" href="../public/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" />
     </>
   );
 }
