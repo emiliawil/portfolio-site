@@ -24,7 +24,7 @@ const Contact = () => {
           </p>
           <Link
             href="mailto:emiliawilliamson@pm.me"
-            className="font-bold underline"
+            className="font-bold underline highlight"
           >
             emiliawilliamson@pm.me
           </Link>

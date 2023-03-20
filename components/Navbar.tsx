@@ -59,7 +59,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div>
+        <nav>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
@@ -90,7 +90,7 @@ export default function Navbar() {
                 );
               })}
               <Link
-                href="/Emilia_Williamson_CV.pdf"
+                href="/CV.pdf"
                 className={
                   "block lg:inline-block cursor-pointer text-neutral-900 highlight"
                 }
@@ -101,7 +101,7 @@ export default function Navbar() {
               </Link>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );

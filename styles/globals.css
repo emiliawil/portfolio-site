@@ -26,9 +26,35 @@ p {
   margin-bottom: 1rem;
 }
 
+nav a {
+  padding: 0 0.5rem;
+}
+
 .links:hover,
 .highlight:hover {
-  background-color: var(--yellow);
+  /* font-weight: bolder; */
+  background: linear-gradient(
+      103deg,
+      rgba(255, 218, 130, 0) 0.9%,
+      rgba(255, 235, 123, 1.25) 2.4%,
+      rgba(255, 207, 48, 0.345) 5.8%,
+      rgba(255, 192, 75, 0.308) 93%,
+      rgba(255, 221, 135, 0.7) 96%,
+      rgba(255, 228, 130, 0) 98%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(255, 238, 130, 0) 0%,
+      rgba(255, 215, 130, 0.3) 7.9%,
+      rgba(255, 234, 130, 0) 15%
+    );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  margin: 0;
+  border-radius: 5px;
+  text-shadow: -6px 6px 6px rgba(255, 211, 107, 0.7),
+    21px -18.1px 7.3px rgba(255, 255, 255, 1),
+    -18.1px -27.3px 30px rgba(255, 255, 255, 1);
 }
 
 .column {
