@@ -43,12 +43,15 @@ const MyStory = () => {
       <div className="column text-justify">
         <p>
           I’m Emilia, an{" "}
-          <span className="text-primary-blue font-bold">avid puzzler</span>,{" "}
-          <span className="text-primary-pink font-bold">
+          <span className="text-primary-darkblue font-bold">avid puzzler</span>,{" "}
+          <span className="text-primary-darkpink font-bold">
             JavaScript fangirl
           </span>
           , and{" "}
-          <span className="text-primary-red font-bold">lover of design</span>.
+          <span className="text-primary-darkred font-bold">
+            lover of design
+          </span>
+          .
         </p>
         <p>
           When I was younger, I was fascinated by magazine covers and page

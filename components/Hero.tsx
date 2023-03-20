@@ -15,6 +15,7 @@ const Hero = () => {
           alt="emilia williamson: ux designer and web developer"
           width={1000}
           height={1000}
+          priority
         />
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
@@ -25,6 +26,7 @@ const Hero = () => {
           smooth={true}
           offset={-100}
           duration={500}
+          aria-label="See my work"
         >
           <Image
             src="/images/lines/arrow.png"

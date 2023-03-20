@@ -1,10 +1,11 @@
 "use client"; // this is a client component
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-scroll/modules";
+import { Link as ScrollLink } from "react-scroll/modules";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import Image from "next/image";
 
 interface NavItem {
   label: string;
@@ -24,10 +25,6 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "contact",
     page: "contact",
   },
-  {
-    label: "cv",
-    page: "cv",
-  },
 ];
 
 export default function Navbar() {
@@ -41,11 +38,16 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-1 md:py-5 md:block">
-            <Link to="home">
+            <ScrollLink to="home">
               <div className="container flex items-center">
-                <img src="/images/logo.png" alt="logo" width={80} />
+                <Image
+                  src="/images/logo.svg"
+                  alt="logo"
+                  width={90}
+                  height={80}
+                />
               </div>
-            </Link>
+            </ScrollLink>
             <div className="md:hidden">
               <button
                 className="p-1 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -69,12 +71,13 @@ export default function Navbar() {
             >
               {NAV_ITEMS.map((item, idx) => {
                 return (
-                  <Link
+                  <ScrollLink
                     key={idx}
                     to={item.page}
                     className={
                       "block lg:inline-block cursor-pointer text-neutral-900 highlight"
                     }
+                    aria-label={item.label}
                     activeClass="active"
                     spy={true}
                     smooth={true}
@@ -83,9 +86,19 @@ export default function Navbar() {
                     onClick={() => setNavbar(!navbar)}
                   >
                     {item.label}
-                  </Link>
+                  </ScrollLink>
                 );
               })}
+              <Link
+                href="/Emilia_Williamson_CV.pdf"
+                className={
+                  "block lg:inline-block cursor-pointer text-neutral-900 highlight"
+                }
+                aria-label="download CV"
+                download
+              >
+                cv
+              </Link>
             </div>
           </div>
         </div>

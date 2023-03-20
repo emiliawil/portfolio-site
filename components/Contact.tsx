@@ -5,10 +5,16 @@ import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 const Contact = () => {
   return (
     <section
-      id="work"
+      id="contact"
       className="flex flex-col items-center justify-center mb-24 max-w-4xl mx-auto"
     >
-      <img src="/images/contact.svg" alt="toolbox" className="my-24" />
+      <Image
+        src="/images/contact.svg"
+        alt="toolbox"
+        className="my-24"
+        width={515}
+        height={94}
+      />
 
       <div className="flex flex-col md:flex-row-reverse gap-16 justify-center items-center">
         <div>
@@ -28,6 +34,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
               className="font-bold underline "
+              aria-label="Open LinkedIn profile in new window"
             >
               <AiOutlineLinkedin
                 className="hover:-translate-y-1 transition-transform cursor-pointer "
@@ -39,6 +46,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
               className="font-bold underline"
+              aria-label="Open GitHub profile in new window"
             >
               <AiOutlineGithub
                 className="hover:-translate-y-1 transition-transform cursor-pointer"

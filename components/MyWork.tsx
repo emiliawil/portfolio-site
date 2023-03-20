@@ -27,7 +27,13 @@ const projects = [
 const MyWork = () => {
   return (
     <section id="work" className="flex flex-col items-center mb-24">
-      <img src="/images/myWork.svg" alt="my work" className="my-24" />
+      <Image
+        src="/images/myWork.svg"
+        alt="my work"
+        className="my-24"
+        width={558}
+        height={105}
+      />
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
@@ -43,6 +49,7 @@ const MyWork = () => {
                         width={700}
                         height={700}
                         className="rounded-xl shadow-xl hover:opacity-70"
+                        aria-label="Open project in new window"
                       />
                     </Link>
                   </div>
@@ -52,13 +59,21 @@ const MyWork = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
+                      <Link
+                        href={project.github}
+                        target="_blank"
+                        aria-label="Open project repo in GitHub"
+                      >
                         <BsGithub
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
-                      <Link href={project.link} target="_blank">
+                      <Link
+                        href={project.link}
+                        target="_blank"
+                        aria-label="Open live project in new window"
+                      >
                         <BsArrowUpRightSquare
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
