@@ -9,7 +9,7 @@ const projects = [
     name: "LetChat",
     description:
       "LetChat is a communication app designed to ease the process of communication for tenants and landlords.",
-    image: "/images/work/letchat.png",
+    image: "/images/work/letChat.png",
     github:
       "https://github.com/SchoolOfCode/bc13_final-project_front-end-git-gud",
     link: "https://letchat.co.uk/",
