@@ -13,8 +13,8 @@ const Hero = () => {
         <Image
           src="/images/hero.svg"
           alt="emilia williamson: ux designer and web developer"
-          width={900}
-          height={900}
+          width={1000}
+          height={1000}
         />
       </div>
       <div className="flex flex-row items-center text-center justify-center ">

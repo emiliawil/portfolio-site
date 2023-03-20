@@ -31,6 +31,18 @@ p {
 }
 
 .column {
-  max-width: 800px;
+  max-width: 1000px;
   columns: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    columns: 1;
+  }
+}
+
+.column p {
+  max-width: 65ch;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }

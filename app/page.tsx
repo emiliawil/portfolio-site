@@ -5,11 +5,11 @@ import Toolbox from "@/components/Toolbox";
 import Contact from "@/components/Contact";
 export default function Home() {
   return (
-    <main className="mx-auto p-3 font-jakarta">
+    <main className="mx-auto p-3 font-jakarta max-w-7xl">
       <Hero />
       <MyWork />
-      <MyStory />
       <Toolbox />
+      <MyStory />
       <Contact />
     </main>
   );
