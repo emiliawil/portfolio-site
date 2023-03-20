@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
-import { HiArrowDown } from "react-icons/hi";
 
 const Hero = () => {
   return (
@@ -14,13 +13,13 @@ const Hero = () => {
         <Image
           src="/images/hero.svg"
           alt="emilia williamson: ux designer and web developer"
-          width={800}
-          height={800}
+          width={900}
+          height={900}
         />
       </div>
       <div className="flex flex-row items-center text-center justify-center ">
         <Link
-          to="about"
+          to="work"
           activeClass="active"
           spy={true}
           smooth={true}

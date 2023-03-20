@@ -23,31 +23,31 @@ const Contact = () => {
           </p>
           <Link
             href="mailto:emiliawilliamson@pm.me"
-            className="font-bold underline text-primary-pink"
+            className="font-bold underline"
           >
             emiliawilliamson@pm.me
           </Link>
-          <div className="flex flex-row gap-2 mt-4">
+          <div className="flex flex-row gap-2 mt-4 text-4xl">
             <Link
               href="https://linkedin.com/in/emiliawil"
               target="_blank"
               rel="noreferrer"
-              className="font-bold underline text-primary-blue"
+              className="font-bold underline "
             >
               <AiOutlineLinkedin
-                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer "
+                size={36}
               />
             </Link>{" "}
             <Link
               href="https://github.com/emiliawil"
               target="_blank"
               rel="noreferrer"
-              className="font-bold underline text-primary-red"
+              className="font-bold underline"
             >
               <AiOutlineGithub
-                className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-                size={30}
+                className="hover:-translate-y-1 transition-transform cursor-pointer"
+                size={36}
               />
             </Link>
           </div>
