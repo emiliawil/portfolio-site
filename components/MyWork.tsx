@@ -9,7 +9,7 @@ const projects = [
     name: "LetChat",
     description:
       "LetChat is a communication app designed to ease the process of communication for tenants and landlords.",
-    image: "/letchat.png",
+    image: "/images/work/letchat.png",
     github:
       "https://github.com/SchoolOfCode/bc13_final-project_front-end-git-gud",
     link: "https://letchat.co.uk/",
@@ -17,20 +17,17 @@ const projects = [
   {
     name: "Insight Dashboard",
     description: "A wellbeing app to help bootcampers maintain healthy habits.",
-    image: "/insightdashboard.png",
+    image: "/images/work/insightDashboard.png",
     github:
       "https://github.com/SchoolOfCode/bc13_w9_project-frontend-globally-scoped",
     link: "https://insightdashboard.netlify.app/",
   },
 ];
 
-const ProjectsSection = () => {
+const MyWork = () => {
   return (
-    <section id="projects">
-      <h1 className="my-10 text-center font-bold text-4xl">
-        Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
-      </h1>
+    <section id="work" className="flex flex-col items-center mb-24">
+      <img src="/images/myWork.png" alt="my work" className="my-24" />
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, idx) => {
@@ -43,8 +40,8 @@ const ProjectsSection = () => {
                       <Image
                         src={project.image}
                         alt=""
-                        width={1000}
-                        height={1000}
+                        width={700}
+                        height={700}
                         className="rounded-xl shadow-xl hover:opacity-70"
                       />
                     </Link>
@@ -79,4 +76,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default MyWork;

@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../public/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+:root {
+  --font-family: "Plus Jakarta Sans", sans-serif;
+  --font-size: 1rem;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --light: "#FFFDF8;";
+  --dark: "#1B1B1B;";
+  --red: "#F45045";
+  --pink: "#F45CB7";
+  --blue: "#66C0F2";
+  --green: "#76EC80";
+  --yellow: "#FFD45E";
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.links:hover,
+.highlight:hover {
+  background-color: var(--yellow);
+}
+
+.column {
+  max-width: 800px;
+  columns: 2;
+}

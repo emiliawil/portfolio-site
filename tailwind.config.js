@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,18 +9,27 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    // colors: {
-    //   transparent: "transparent",
-    //   primary: "rgb(240, 100, 150)",
-    //   black: "#000",
-    //   white: "#fff",
-    // },
     extend: {
+      colors: {
+        primary: {
+          light: "#FFFDF8;",
+          dark: "#1B1B1B;",
+          red: "#F45045",
+          pink: "#F45CB7",
+          blue: "#66C0F2",
+          green: "#76EC80",
+          yellow: "#FFD45E",
+        },
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
+      },
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
         fadeIn: "fadeIn 1.5s",
         bounce:
-          "bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
+          "bounce 1s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite",
         slideUp: "slideUp 0.5s",
         slideUpEaseInOut: "slideUp 0.5s ease-in-out",
         slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",

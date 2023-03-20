@@ -1,12 +1,14 @@
-import AboutSection from "@/components/AboutSection";
-import HeroSection from "@/components/HeroSection";
-import ProjectsSection from "@/components/ProjectsSection";
+import MyStory from "@/components/MyStory";
+import Hero from "@/components/Hero";
+import MyWork from "@/components/MyWork";
+import Toolbox from "@/components/Toolbox";
 export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
+    <main className="mx-auto p-3 font-jakarta">
+      <Hero />
+      <MyWork />
+      <MyStory />
+      <Toolbox />
     </main>
   );
 }

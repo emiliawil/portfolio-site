@@ -3,7 +3,6 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
 import { usePathname } from "next/navigation";
-import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
@@ -14,39 +13,42 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Home",
-    page: "home",
+    label: "work",
+    page: "work",
   },
   {
-    label: "About",
+    label: "about",
     page: "about",
   },
   {
-    label: "Projects",
-    page: "projects",
+    label: "contact",
+    page: "contact",
+  },
+  {
+    label: "cv",
+    page: "cv",
   },
 ];
 
 export default function Navbar() {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
   const pathname = usePathname();
   const [navbar, setNavbar] = useState(false);
   return (
-    <header className="w-full mx-auto px-4 sm:px-10 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+    <header
+      id="top"
+      className="w-full mx-auto p-3 md:px-8 sticky top-0 z-50 bg-primary-light"
+    >
       <div className="justify-between md:items-center md:flex">
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-1 md:py-5 md:block">
             <Link to="home">
-              <div className="container flex items-center space-x-2">
-                <h2 className="text-2xl font-bold cursor-pointer">
-                  Emilia Williamson
-                </h2>
+              <div className="container flex items-center">
+                <img src="/images/logo.png" alt="logo" width={80} />
               </div>
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-1 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -61,14 +63,17 @@ export default function Navbar() {
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <div
+              id="links"
+              className="items-center justify-center space-y-5 md:flex md:space-x-8 md:space-y-0"
+            >
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
                     key={idx}
                     to={item.page}
                     className={
-                      "block lg:inline-block cursor-pointer text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                      "block lg:inline-block cursor-pointer text-neutral-900 highlight"
                     }
                     activeClass="active"
                     spy={true}
@@ -81,21 +86,6 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              {currentTheme === "dark" ? (
-                <button
-                  onClick={() => setTheme("light")}
-                  className="cursor-pointer bg-slate-100 p-2 rounded-xl"
-                >
-                  <RiSunLine size={25} color="black" />
-                </button>
-              ) : (
-                <button
-                  onClick={() => setTheme("dark")}
-                  className="cursor-pointer bg-slate-100 p-2 rounded-xl"
-                >
-                  <RiMoonFill size={25} />
-                </button>
-              )}
             </div>
           </div>
         </div>

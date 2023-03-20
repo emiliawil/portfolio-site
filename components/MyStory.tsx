@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const skills = [
   { skill: "JavaScript" },
@@ -29,16 +30,65 @@ const learning = [
   { skill: "Firebase" },
 ];
 
-const AboutSection = () => {
+const MyStory = () => {
   return (
-    <section id="about">
-      <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center font-bold text-4xl">
-          About Me
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
-        </h1>
-
-        <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
+    <section id="about" className="flex flex-col items-center mb-24">
+      <Image
+        src="/images/myStory.png"
+        width={542}
+        height={111}
+        alt="my story"
+        className="my-24"
+      />
+      <div className="column text-justify">
+        <p>
+          I’m Emilia, an{" "}
+          <span className="text-primary-blue font-bold">avid puzzler</span>,{" "}
+          <span className="text-primary-pink font-bold">
+            JavaScript fangirl
+          </span>
+          , and{" "}
+          <span className="text-primary-red font-bold">lover of design</span>.
+        </p>
+        <p>
+          When I was younger, I was fascinated by magazine covers and page
+          layouts, making my own ‘newsletters’ using stickers and cuttings from
+          the girls’ magazines my mom bought me.
+        </p>
+        <p>
+          As a teenager, that translated into a love of web design. I would
+          spend hours on my old chunky laptop, carefully erasing backgrounds
+          from pictures of flowers and anime characters, constructing elaborate
+          banners in Corel Paint Shop Pro and slotting them into HTML table
+          layouts. It’s an era of the web I miss, and I always try to
+          incorporate the essence of what excited me about those websites into
+          my current work.
+        </p>
+        <p>
+          I didn’t know what I wanted to do after high school, and I never
+          considered that my weird hobby could be turned into a career. A lover
+          of the humanities, I did an English degree and then converted to Law,
+          before realising that world was not for me. I worked in advice and
+          guidance roles for years, still dabbling with coding in my free time,
+          before deciding to take the plunge and change my life by quitting my
+          job and committing to a career change.
+        </p>
+        <p>
+          I was fortunately accepted into{" "}
+          <Link
+            href="https://schoolofcode.co.uk"
+            target="_blank"
+            rel="noreferrer"
+            className="highlight font-bold underline"
+          >
+            School of Code
+          </Link>
+          , an intensive 16-week web development bootcamp. It was life-changing.
+          We were taught how to learn, work on a dev team, think computationally
+          and solve problems creatively, and I have loved every second of it.
+        </p>
+      </div>
+      {/* <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
               Get to know me!
@@ -104,19 +154,9 @@ const AboutSection = () => {
                   </p>
                 );
               })}
-            </div>
-            {/* <Image
-              src="/hero-image.png"
-              alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
-            /> */}
-          </div>
-        </div>
-      </div>
+            </div> */}
     </section>
   );
 };
 
-export default AboutSection;
+export default MyStory;
