@@ -19,8 +19,9 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row-reverse gap-16 justify-center items-center">
         <div>
           <p className="max-w-[65ch]">
-            I am currently looking for my first tech role and would love to hear
-            from you if you have any questions, feedback or opportunities.
+            My contract work with School of Code is coming to an end shortly, and I'm looking for
+            new opportunities. If you're looking for a developer who makes a cracking cup of tea, 
+            I'd love to hear from you!
           </p>
           <Link
             href="mailto:emiliawilliamson@pm.me"
