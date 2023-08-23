@@ -90,7 +90,8 @@ export default function Navbar() {
                 );
               })}
               <Link
-                href="/CV.pdf"
+                href="/Emilia_Williamson_CV.pdf"
+                target="_blank"
                 className={
                   "block lg:inline-block cursor-pointer text-neutral-900 highlight"
                 }
