@@ -3,7 +3,7 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 // import getPostMetadata from "../../../../components/getPostMetadata";
 
-const getPostContent = (slug: string) => {
+// const getPostContent = (slug: string) => {
 //   const folder = "posts/";
 //   const file = `${folder}${slug}.md`;
 //   const content = fs.readFileSync(file, "utf8");
@@ -18,10 +18,13 @@ const getPostContent = (slug: string) => {
 //   }));
 // };
 
-// const PostPage = (props: any) => {
+const PostPage = (props: any) => {
 //   const slug = props.params.slug;
 //   const post = getPostContent(slug);
-//   return (
+  return (
+    <div className="flex justify-center items-center h-[75vh] text-center">
+        You shouldn't be here.
+    </div>
 //     <div className="mx-10">
 //       <div className="my-12 text-center">
 //         <h1 className="text-2xl font-bold">{post.data.title}</h1>
@@ -32,7 +35,7 @@ const getPostContent = (slug: string) => {
 //         <Markdown>{post.content}</Markdown>
 //       </article>
 //     </div>
-//   );
+  );
 };
 
-// export default PostPage;
+export default PostPage;
