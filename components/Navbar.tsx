@@ -40,12 +40,14 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-1 md:py-5 md:block">
             <ScrollLink to="home">
               <div className="container flex items-center">
+                <Link href="/">
                 <Image
                   src="/images/logo.svg"
                   alt="logo"
                   width={90}
                   height={80}
                 />
+                </Link>
               </div>
             </ScrollLink>
             <div className="md:hidden">
@@ -89,6 +91,15 @@ export default function Navbar() {
                   </ScrollLink>
                 );
               })}
+              <Link
+                href="/blog"
+                className={
+                  "block lg:inline-block cursor-pointer text-neutral-900 highlight"
+                }
+                aria-label="blog"
+              >
+                blog
+              </Link>
               <Link
                 href="/Emilia_Williamson_CV.pdf"
                 target="_blank"
