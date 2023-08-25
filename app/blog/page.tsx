@@ -1,12 +1,12 @@
 import React from 'react'
-import getPostMetadata from "../../components/getPostMetadata";
+// import getPostMetadata from "../../components/getPostMetadata";
 import PostPreview from "../../components/PostPreview";
 
 export default function Blog() {
-    const postMetadata = getPostMetadata();
-    const postPreviews = postMetadata.map((post) => (
-      <PostPreview key={post.slug} {...post} />
-    ));
+    // const postMetadata = getPostMetadata();
+    // const postPreviews = postMetadata.map((post) => (
+    //   <PostPreview key={post.slug} {...post} />
+    // ));
   
     return (
         <div className="flex h-[70vh] justify-center items-center">
