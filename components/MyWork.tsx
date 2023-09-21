@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
@@ -10,6 +9,7 @@ const projects = [
     description:
       "LetChat is a communication app designed to ease the process of communication for tenants and landlords.",
     image: "/images/work/letChat.png",
+    page: "/work/letChat",
     github:
       "https://github.com/SchoolOfCode/bc13_final-project_front-end-git-gud",
     link: "https://letchat.co.uk/",
@@ -18,6 +18,7 @@ const projects = [
     name: "Insight Dashboard",
     description: "A wellbeing app to help bootcampers maintain healthy habits.",
     image: "/images/work/insightDashboard.png",
+    page: "/work/insightDashboard",
     github:
       "https://github.com/SchoolOfCode/bc13_w9_project-frontend-globally-scoped",
     link: "https://insightdashboard.netlify.app/",
@@ -39,7 +40,6 @@ const MyWork = () => {
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
                     <Link href={project.link}>
@@ -59,6 +59,11 @@ const MyWork = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
+                      <Link href={project.page}>
+                        <button className="px-4 py-2 text-white rounded-md bg-primary-dark">
+                          Read More
+                        </button>
+                      </Link>
                       <Link
                         href={project.github}
                         target="_blank"
@@ -82,7 +87,6 @@ const MyWork = () => {
                     </div>
                   </div>
                 </div>
-              </SlideUp>
             </div>
           );
         })}
