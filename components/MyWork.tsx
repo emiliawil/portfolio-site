@@ -59,11 +59,11 @@ const MyWork = () => {
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.page}>
+                      {/* <Link href={project.page}>
                         <button className="px-4 py-2 text-white rounded-md bg-primary-dark">
                           Read More
                         </button>
-                      </Link>
+                      </Link> */}
                       <Link
                         href={project.github}
                         target="_blank"
