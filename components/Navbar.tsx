@@ -85,7 +85,7 @@ export default function Navbar() {
                   </Link>
                 );
               })}
-              <Link
+              {/* <Link
                 href="/blog"
                 className={
                   "block lg:inline-block cursor-pointer text-neutral-900 highlight"
@@ -93,7 +93,7 @@ export default function Navbar() {
                 aria-label="blog"
               >
                 blog
-              </Link>
+              </Link> */}
               <Link
                 href="/Emilia_Williamson_CV.pdf"
                 target="_blank"
